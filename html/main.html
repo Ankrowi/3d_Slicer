@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>Делаем для Наськи безвозмедно диплом</title>
+        <link rel="stylesheet" href="../css/styles.css">
+    </head>
+    <body>
+        <button id="SLM">SLM</button>
+        <div class="Login">
+            <img src="../pictures/Login.svg">
+            Login
+        </div>
+        <div class="Panel" id="left_panel">
+            <ul class="panel_elements">
+                <li>
+                    <div class="pic_button">
+                        <img src="../pictures/Setup.svg">
+                        <p>Setup</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic_button">
+                        <img src="../pictures/Files.svg">
+                        <p>Files</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic_button">
+                        <img src="../pictures/View.svg">
+                        <p>View</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic_button">
+                        <img src="../pictures/Tools.svg">
+                        <p>Tools</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <input type="image" src="../pictures/Arrow.svg" class="arrow" id="left_arrow">
+        <div class="scroll_layers">
+            <a>0</a>
+            <input type="range" id="scroll">
+            <a>72</a>
+        </div>
+        <div class="view_panel">
+            <input type="image" src="../pictures/View_full.svg" class="view_button">
+            <input type="image" src="../pictures/View_front.svg" class="view_button">
+            <input type="image" src="../pictures/View_top.svg" class="view_button">
+            <input type="image" src="../pictures/View_left.svg" class="view_button">
+            <input type="image" src="../pictures/View_right.svg" class="view_button">
+        </div>
+        <div class="Panel" id="right_panel">
+            <ul class="vertical_list">
+                <li><button class="settings_button">PROJECT</button></li>
+                <li><button class="settings_button">SUPPORT</button></li>
+                <li><button class="settings_button">SLICE</button></li>
+                <li><button class="settings_button">LAYERS</button></li>
+            </ul>
+        </div>
+        <input type="image" src="../pictures/Arrow.svg" class="arrow" id="right_arrow">
+        <div class="download">
+            <input type="image" src="../pictures/Download.svg">
+            <p>Download</p>
+            <p>G-code</p>
+            <img src="../pictures/Dwnd_shape.svg">
+        </div>
+        <img src="../pictures/Main.svg" id="main_picture">
+        <div class="settings_panel">
+            <div class="settings_header">
+                <a>PROJECT</a>
+                <input type="image" src="../pictures/Cross.svg" id="close_settings">
+            </div>
+            <div class="panel" id="left_settings_panel"></div>
+            <div class="panel" id="right_settings_panel"></div>
+        </div>
+        <script src="../scripts/panels_script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,244 @@
+/* Класс для обрамления в тёмный фон боковых панелей */
+.panel {
+    margin: 0px;
+    background-color: #4B4B4B;
+    padding: 0px;
+}
+/* Класс для группировки кнопок на левой панеле */
+.panel_elements {
+    margin-top:  40px;
+    list-style: none;
+    padding: 5px;
+    margin-left: 20px;
+    margin-right: 30px;
+    list-style-position: inside;
+}
+.panel_elements li {
+    margin-bottom: 34px;
+}
+/* Класс для группировки кнопки с текстом на левой панеле */
+.pic_button {
+    background-color: inherit; 
+}
+/* Настройка текста под картинками на левой панеле */
+.pic_button p {
+    font-family: 'Roboto';
+    color: #FFFFFF;
+    font-size: 27px;
+    margin: 0px;
+    padding: 0px;
+    font-weight: 400;
+    text-align: center;
+    width: inherit;
+}
+.pic_button img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Настройка левой панели через обращение непосредственно к объекту */
+#left_panel {
+    width: fit-content;
+    height: fit-content;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 0px;
+    position: fixed;
+    top: 426px;
+}
+/* Настройка фона сайта */
+body {
+    background: linear-gradient(180deg, #BFBFBF 0%, #7C7C7C 100%);
+}
+/* Настройка кнопки SLM напрямую */
+#SLM {
+    background-color: inherit;
+    left: 41px;
+    top: 74px;
+    color:#FFFFFF;
+    border-style: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 59px;
+    border-bottom: 4px dashed #FFFFFF;
+    padding-bottom: 0px;
+    margin-top: 74px;
+    margin-left: 41px;
+}
+/* Настройка кнопки login напрямую */
+.login {
+    float: right;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #FFFFFF;
+    margin-top: 92px;
+    margin-right: 51px;
+}
+/* Настройка картинки у кнопки login */
+.login img {
+    max-height: 40px;
+    margin-right: 10px;
+}
+/* Класс для группировки полосы прокрутки слоёв со значениями  */
+.scroll_layers {
+    position: fixed;
+    margin: 0px;
+    padding: 0px;
+    bottom: 116px;
+    left: 250px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    color:#FFFFFF;
+}
+/* Настройка непосредственно полосы прокрутки */
+#scroll {
+    width: 1872px;
+    overflow: hidden;
+    border-radius: 10px;
+    -webkit-appearance: none;
+}
+/* Настройка области прокрутки на слайдере */
+#scroll::-webkit-slider-runnable-track {
+    border-radius: 10px;
+    background-color: rgb(0,0,0,0.59);
+    height: 20px;
+    -webkit-appearance: none;
+}
+/* Настройка ползунка на полосе прокрутки */
+#scroll::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color:#FFFFFF;
+    width: 20px;
+    height: 40px;
+    border-radius: 0px;
+    margin-top: -10px;
+    cursor: ew-resize;
+    background: white;
+    box-shadow: -1000px 0 0 1000px white;
+}
+/* Настройка правой панели */
+#right_panel {
+    position: fixed;
+    width: 244px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 50px;
+    right: 10px;
+    top: 426px;
+}
+/* Класс для группировки элементов расположенный вертикально */
+.vertical_list {
+    list-style: none;
+    padding-top: 66px;
+}
+/* Класс для кнопок вызова настроек на правой панеле */
+.settings_button {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    color: #FFFFFF;
+    background-color: #4B4B4B;
+    border-style: none;
+    margin-bottom: 66px;
+}
+/* КЛасс для группировки кнопок по смене вида модели */
+.view_panel {
+    position: fixed;
+    bottom: 180px;
+    left: 250px;
+}
+/* Класс для настройки картинок смены вида модели */
+.view_button {
+    margin-right: 40px;
+}
+/* Класс для группировки картинки с текстом для скачивания G-code */
+.download {
+    position: fixed;
+    right: 91px;
+    bottom: 150px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    color: white;
+}
+/* Настройка текста под кнопкой скачивания */
+.download p {
+    margin: 5px;
+    padding: 0px;
+}
+/* Настройка картинки-иммитации модели */
+#main_picture {
+    left: 700px;
+    top: 360px;
+    position: fixed;
+}
+/* Класс для настрйоки стрелочек выдвижения панелей */
+.arrow {
+    background-color: inherit;
+}
+#left_arrow {
+    position: fixed;
+    left: 220px;
+    top: 466px;
+}
+#right_arrow {
+    position: fixed;
+    right: 260px;
+    top: 466px;
+    transform: rotate(180deg);
+}
+.settings_panel {
+    background: rgba(227, 227, 227, 0.47);
+    border: 1px solid #B6B6B6;
+    box-sizing: border-box;
+    backdrop-filter: blur(15px);        
+    border-radius: 50px;
+    position: absolute;
+    width: 1775px;
+    height: 1053px;
+    left: 306px;
+    top: 322px;
+    display: none;
+}
+.settings_panel a {
+    padding: 0px;
+    margin-top: 30px;
+    margin-left: 36px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    color: #000000;
+    position: absolute;
+}
+.settings_panel .panel {
+    width: 834px;
+    height: 924px;
+    margin-left: 36px;
+    float: left;
+    display: block;
+    border-radius: 50px;
+}
+#close_settings {
+    float: right;
+    padding: 0px;
+    margin: 0px;
+}
+.settings_header{
+    height: 97px;
+    width: inherit;
+}
