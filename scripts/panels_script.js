@@ -13,7 +13,7 @@ function arrow_clicked (arrow) {
 function open_arrow(arrow) {
     arrow_states.set(arrow, "open")
     if (arrow === "left_arrow") {
-        document.getElementById(arrow).style.left = 220
+        document.getElementById(arrow).style.left = 200
         document.getElementById(arrow).style.transform = 'rotate(0deg)'
         show_panel(left_panel, "left")
     } else {
