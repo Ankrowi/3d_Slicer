@@ -23,7 +23,7 @@
 /* Настройка текста под картинками на левой панеле */
 .pic_button p {
     font-family: 'Roboto';
-    color: #FFFFFF;
+    color: red;
     font-size: 27px;
     margin: 0px;
     padding: 0px;
