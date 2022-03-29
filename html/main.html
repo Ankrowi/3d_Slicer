@@ -7,7 +7,7 @@
         <button id="SLM">SLM</button>
         <div class="Login">
             <img src="../pictures/Login.svg">
-            Login
+            <span>Login</span>
         </div>
         <div class="Panel" id="left_panel">
             <ul class="panel_elements">
@@ -39,9 +39,9 @@
         </div>
         <input type="image" src="../pictures/Arrow.svg" class="arrow" id="left_arrow">
         <div class="scroll_layers">
-            <a>0</a>
+            <span>0</span>
             <input type="range" id="scroll">
-            <a>72</a>
+            <span>72</span>
         </div>
         <div class="view_panel">
             <input type="image" src="../pictures/View_full.svg" class="view_button" id="view_full">
@@ -66,13 +66,54 @@
             <img src="../pictures/Dwnd_shape.svg">
         </div>
         <img src="../pictures/Main_full.svg" id="main_picture">
-        <div class="settings_panel">
+        <div class="settings_panel_one_slot">
             <div class="settings_header">
                 <a>PROJECT</a>
                 <input type="image" src="../pictures/Cross.svg" id="close_settings">
             </div>
-            <div class="panel" id="left_settings_panel"></div>
-            <div class="panel" id="right_settings_panel"></div>
+            <div class="panel" id="settings_project">
+                <div class="lined_down_section"> 
+                    <p>File</p>
+                    <button class="custom_button" id="file_save">
+                        <span>Save</span>
+                    </button>
+                    <button class="custom_button" id="file_open">Open</button>
+                    <button class="custom_button" id="file_new">New</button>
+                </div>
+                <div class="lined_down_section">
+                    <p>Presets</p>
+                    <input type="text" class="custom_text_input" id="presets_input">
+                    <button class="custom_button" id="presets_default">Default</button>
+                </div>
+                <div class="lined_down_section">
+                    <p>Preset</p>
+                    <input type="text" class="custom_text_input" id="presets_input" placeholder="Default">
+                    <button class="custom_button" id="presets_save">Save</button>
+                    <button class="custom_button" id="presets_clone">Clone</button>
+                    <button class="custom_button" id="presets_delete">Delete</button>
+                    <div class="label_with_input">
+                        <a>Machine Model</a>
+                        <select class="custom_select" id="presets_mach_model">
+                    </div>
+                    <div class="label_with_input">
+                        <a>Machine name</a>
+                        <input type="type" class="custom_text_input" placeholder="Enter the name">
+                    </div>
+                    <div class="label_with_input">
+                        <a>Dropparts height</a>
+                        <input type="type" class="custom_text_input" placeholder="Enter the height">
+                    </div>
+                </div>
+                <div class="lined_down_section"> 
+                    <p>Transform</p>
+                    <button class="custom_button">Center</button>
+                    <button class="custom_button">Flip</button>
+                    <button class="custom_button">Drop</button>
+                </div>
+                <div class="lined_down_section"> 
+                    <button class="custom_button" id="analise_button">Analise model</button>
+                </div>
+            </div>
         </div>
         <script src="../scripts/panels_script.js"></script>
         <script src="../scripts/buttons_script.js"></script>
