@@ -29,8 +29,3 @@ Array.from(view_buttons).forEach(function (button) {
 function set_buttons_back_image(button, button_class) {
     button.style.backgroundImage = "url(" + buttons_ways.get(button_class) + ")"
 }
-
-let def_buttons = document.getElementsByClassName("custom_button")
-Array.from(def_buttons).forEach(function(button) {
-    set_buttons_back_image(button, "custom_button")
-})

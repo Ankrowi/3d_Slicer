@@ -262,7 +262,7 @@ body {
     color: #FFFFFF;
 }
 .custom_button {
-    border-radius: 10px;
+    border-radius: 12px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -276,10 +276,7 @@ body {
     background-repeat: no-repeat;
     left: auto;
     right: auto;
-    -webkit-appearance: none;
-}
-.custom_button:active, .custom_button:focus {
-    outline: none;
+    background-image: url("../pictures/default_button.svg");
 }
 #file_new {
     float: right;
@@ -288,7 +285,7 @@ body {
     margin-left: 54px;
 }
 .custom_text_input {
-    height: 500 px;
+    height: 50px !important;
     background: #767676;
     border-radius: 100 px;
     -webkit-border-radius: 10px; 
@@ -296,6 +293,7 @@ body {
     font-size: 27;
     outline: none;
     border: none;
+    float: right;
 }
 .custom_text_input::-webkit-input-placeholder {
     padding-left: 5px;
@@ -317,6 +315,37 @@ body {
     color:#A0A0A0;
     opacity:1;
 }
+#preset_input {
+    width: 100%;
+}
 #presets_input {
     width: 100%;
+}
+#presets_default {
+    background-image:  url("../pictures/presets_def.svg");
+    width: 120px;
+    height: 50px;
+}
+#preset_save {
+    float: left;
+}
+#preset_clone {
+    margin-left: 54px;
+}
+#preset_delete {
+    background-image: url("../pictures/preset_delete.svg");
+    width: 120;
+    float: right;
+}
+.custom_select {
+    height: 50px !important;
+    background: #767676;
+    border-radius: 100 px;
+    -webkit-border-radius: 10px; 
+    margin-bottom: 30px;
+    font-size: 27;
+    outline: none;
+    border: none;
+    width: 466px;
+    float: right;
 }
