@@ -262,26 +262,24 @@ body {
     color: #FFFFFF;
 }
 .custom_button {
-    border: 1px solid;
-    border-color: rgb(255,255,255,0.7);
     border-radius: 10px;
-    width: 210px;
-    height: 50px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 27px;
     text-align: center;
     line-height: 32px;
-    background-color:  #353535;;
     color: #FFFFFF;
     margin-bottom: 36px;
+    width: 218px;
+    height: 53px;
+    background-repeat: no-repeat;
     left: auto;
     right: auto;
-    
+    -webkit-appearance: none;
 }
-.custom_button span {
-    backdrop-filter: blur(4px); 
+.custom_button:active, .custom_button:focus {
+    outline: none;
 }
 #file_new {
     float: right;

@@ -1,0 +1,23 @@
+<svg width="215" height="50" viewBox="0 0 215 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="215" height="50" rx="10" fill="#353535"/>
+<path d="M0 21C0 21 65.342 30.6923 107.5 30.6923C149.658 30.6923 215 21 215 21V39C215 44.5228 210.523 49 205 49H10C4.47716 49 0 44.5228 0 39V21Z" fill="url(#paint0_linear_357_332)"/>
+<mask id="mask0_357_332" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="215" height="50">
+<rect width="215" height="50" rx="10" fill="#353535"/>
+</mask>
+<g mask="url(#mask0_357_332)">
+<g filter="url(#filter0_f_357_332)">
+<rect x="0.5" y="0.5" width="214" height="49" rx="9.5" stroke="white"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_f_357_332" x="-4" y="-4" width="223" height="58" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur_357_332"/>
+</filter>
+<linearGradient id="paint0_linear_357_332" x1="107.5" y1="21" x2="107.5" y2="49" gradientUnits="userSpaceOnUse">
+<stop stop-color="#202020"/>
+<stop offset="1" stop-color="#202020" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>
