@@ -3,13 +3,14 @@
 <head>
     <title>Диплом</title>
     <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
     <button id="SLM">SLM</button>
     <div class="Login">
         <img src="pictures/Login.svg">
-        <span>Login</span>
+        <p>Login</p>
     </div>
     <div class="Panel" id="left_panel">
         <ul class="panel_elements">
@@ -65,7 +66,6 @@
         <input type="image" src="pictures/Download.svg">
         <p>Download</p>
         <p>G-code</p>
-        <img src="pictures/Dwnd_shape.svg">
     </div>
     <img src="pictures/Main_full.svg" id="main_picture">
     <div class="settings_panel_one_slot">
@@ -85,7 +85,7 @@
                 </div>
                 <div class="lined_down_section">
                     <p>Presets</p>
-                    <input type="text" class="custom_text_input" id="presets_input">
+                    <input type="text" class="custom_text_input" id="presets_input" placeholder="Default">
                     <button class="custom_button" id="presets_default">Default</button>
                 </div>
                 <div class="lined_down_section">
@@ -123,5 +123,4 @@
     <script src="scripts/panels_script.js"></script>
     <script src="scripts/buttons_script.js"></script>
 </body>
-
 </html>

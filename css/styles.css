@@ -1,3 +1,7 @@
+body {
+    font-size: 14px;
+    font-weight: 400;
+}
 /* Класс для обрамления в тёмный фон боковых панелей */
 .panel {
     margin: 0px;
@@ -46,6 +50,7 @@
     border-bottom-left-radius: 0px;
     position: fixed;
     top: 426px;
+    display: none;
 }
 /* Настройка фона сайта */
 body {
@@ -67,6 +72,7 @@ body {
     padding-bottom: 0px;
     margin-top: 74px;
     margin-left: 41px;
+    display: none;
 }
 /* Настройка кнопки login напрямую */
 .login {
@@ -74,11 +80,14 @@ body {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    font-size: 32px;
-    line-height: 38px;
     color: #ffffff;
-    margin-top: 92px;
-    margin-right: 51px;
+    margin-top: 4.3em;
+    margin-right: 3.4em;
+    margin-bottom: 2em;
+}
+.login p {
+    padding: 0%;
+    margin: 0%;
 }
 /* Настройка картинки у кнопки login */
 .login img {
@@ -95,8 +104,8 @@ body {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
     color:#FFFFFF;
+    display: none;
 }
 /* Настройка непосредственно полосы прокрутки */
 #scroll {
@@ -127,51 +136,51 @@ body {
 /* Настройка правой панели */
 #right_panel {
     position: fixed;
-    width: 244px;
-    border-top-left-radius: 50px;
+    float: right;
+    border-top-left-radius: 25px;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
-    border-bottom-left-radius: 50px;
-    right: 10px;
-    top: 426px;
+    border-bottom-left-radius: 25px;
+    right: 0em;
+    top: 11.4em;
 }
 /* Класс для группировки элементов расположенный вертикально */
 .vertical_list {
     list-style: none;
-    padding-top: 66px;
+    padding: 0%;
+    margin: 1em;
+    margin-bottom: 0%;
+    font-size: 18px;
 }
 /* Класс для кнопок вызова настроек на правой панеле */
 .settings_button {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 32px;
-    line-height: 38px;
     color: #FFFFFF;
     background-color: #4B4B4B;
     border-style: none;
-    margin-bottom: 66px;
+    margin-bottom: 1.5em;
 }
 /* КЛасс для группировки кнопок по смене вида модели */
 .view_panel {
     position: fixed;
-    bottom: 180px;
-    left: 250px;
+    bottom: 4.8em;
+    left: 5.3em;
 }
 /* Класс для настройки картинок смены вида модели */
 .view_button {
-    margin-right: 40px;
+    margin-right: 1.5em;
+    max-width: 2.5em;
+    max-height: 2.9em;
 }
 /* Класс для группировки картинки с текстом для скачивания G-code */
 .download {
     position: fixed;
-    right: 91px;
-    bottom: 150px;
+    left: 5.3em;
+    top: 12.5em;
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 38px;
     text-align: center;
     color: white;
 }
@@ -180,11 +189,17 @@ body {
     margin: 5px;
     padding: 0px;
 }
+.download input[type="image"] {
+    max-width: 3.5em;
+    max-height: 5.1em;
+}
 /* Настройка картинки-иммитации модели */
 #main_picture {
-    left: 700px;
-    top: 360px;
     position: fixed;
+    max-width: 41.6em;
+    max-height: 24em;
+    left: 16.4em;
+    top: 16.4em;
 }
 /* Класс для настрйоки стрелочек выдвижения панелей */
 .arrow {
@@ -194,49 +209,54 @@ body {
     position: fixed;
     left: 200px;
     top: 466px;
+    display: none;
 }
 #right_arrow {
     position: fixed;
-    right: 260px;
-    top: 466px;
+    right: 8.5em;
+    top: 12.5em;
     transform: rotate(180deg);
+    max-width: 1.14em;
+    max-height: 2.14em;
 }
 .settings_panel_one_slot {
     background: rgba(227, 227, 227, 0.47);
     border: 1px solid #B6B6B6;
     box-sizing: border-box;
     backdrop-filter: blur(15px);        
-    border-radius: 50px;
+    border-radius: 25px;
     position: absolute;
-    top: 192px;
-    left: 661px;
+    top: 9.6em;
+    left: 22.7em;
 }
 .settings_panel_one_slot a {
+    font-size: 18px;
     padding: 0px;
-    margin-top: 30px;
-    margin-left: 36px;
+    margin-top: 1em;
+    margin-left: 1.1em;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    font-size: 34px;
     color: #000000;
     position: absolute;
 }
 .settings_panel_one_slot .panel {
-    margin-left: 36px;
+    margin-left: 1.45em;
     float: left;
-    border-radius: 50px;
-    margin-right: 36px;
-    margin-bottom: 36px;
+    border-radius: 25px;
+    margin-right: 1.45em;
+    margin-bottom: 1.45em;
     overflow: auto;
 }
 #close_settings {
     float: right;
     padding: 0px;
     margin: 0px;
+    max-width: 2.3em;
+    max-height: 2.3em;
 }
 .settings_header{
-    height: 97px;
+    height: 3.9em;
     width: inherit;
 }
 #settings_project {
@@ -244,35 +264,31 @@ body {
     position: relative;
 }
 .lined_down_section {
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 32px;
+    margin-left: 1.7em;
+    margin-right: 1.7em;
+    margin-top: 1.1em;
     border-bottom: 0.5px solid white;
     display: block;  
 }
 .lined_down_section p {
     padding: 0px;
-    margin: px;
-    margin-bottom: 20px;
+    margin: 0px;
+    margin-bottom: 1.1em;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    font-size: 27px;
-    line-height: 32px;
     color: #FFFFFF;
 }
 .custom_button {
-    border-radius: 12px;
+    border-radius: 10px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 27px;
     text-align: center;
-    line-height: 32px;
     color: #FFFFFF;
-    margin-bottom: 36px;
-    width: 218px;
-    height: 53px;
+    margin-bottom: 1.3em;
+    width: 8.64em;
+    height: 2em;
     background-repeat: no-repeat;
     left: auto;
     right: auto;
@@ -282,18 +298,17 @@ body {
     float: right;
 }
 #file_open {
-    margin-left: 54px;
+    margin-left: 2em;
 }
 .custom_text_input {
-    height: 50px !important;
+    height: 2em !important;
     background: #767676;
-    border-radius: 100 px;
+    border-radius: 10 px;
     -webkit-border-radius: 10px; 
-    font-size: 27;
     outline: none;
     border: none;
     float: right;
-    width: 463px;
+    width: 19em;
 }
 .custom_text_input::-webkit-input-placeholder {
     padding-left: 5px;
@@ -316,42 +331,41 @@ body {
     opacity:1;
 }
 #preset_input {
-    margin-bottom: 26px;
+    margin-bottom: 1em;
     width: 100%;
 }
 #presets_input {    
-    margin-bottom: 16px;
+    margin-bottom: 0.6em;
     width: 100%;
 }
 #presets_default {
     background-image:  url("../pictures/presets_def.svg");
-    width: 120px;
-    height: 50px;
+    width: 4.9em;
+    height: 2em;
 }
 #preset_save {
     float: left;
 }
 #preset_clone {
-    margin-left: 54px;
+    margin-left: 2em;
 }
 #preset_delete {
     background-image: url("../pictures/preset_delete.svg");
-    width: 120;
+    width: 4.9em;
     float: right;
 }
 .custom_select {
-    height: 50px !important;
+    height: 2em !important;
     background: #767676;
-    border-radius: 100 px;
+    border-radius: 10 px;
     -webkit-border-radius: 10px; 
-    font-size: 27;
     outline: none;
     border: none;
-    width: 463px;
+    width: 19em;
     float: right;
 }
 .label_with_input {
-    margin-bottom: 50px;
+    margin-bottom: 1.3em;
     width: 100%;
     height:fit-content;
 }
@@ -359,20 +373,18 @@ body {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 27px;
-    line-height: 32px;
     color: #FFFFFF;
 }
 .wrapper_for_scrolling {
-    height: 921px;
-    width: 834px;
+    height: 36.7em;
+    width: 34.3em;
     display: block;
     position: relative;
-    margin-right: 34px;
+    margin-right: 10px;
     overflow: auto;
 }
 .wrapper_for_scrolling::-webkit-scrollbar {
-    width: 12px;
+    width: 8px;
 }
  .wrapper_for_scrolling::-webkit-scrollbar-track {
     background: transparent;
