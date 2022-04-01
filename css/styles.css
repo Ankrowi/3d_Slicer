@@ -372,14 +372,10 @@ body {
     overflow: auto;
 }
 .wrapper_for_scrolling::-webkit-scrollbar {
-    height: 70%;
-    max-height: 70%;
-    width: 8px;
+    width: 12px;
 }
  .wrapper_for_scrolling::-webkit-scrollbar-track {
     background: transparent;
-    max-height: 70%;
-    height: 70%;
     border-radius: 100px;
 }
 .wrapper_for_scrolling::-webkit-scrollbar-thumb {
