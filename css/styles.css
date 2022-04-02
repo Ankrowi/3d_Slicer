@@ -105,7 +105,6 @@ body {
     font-style: normal;
     font-weight: 700;
     color:#FFFFFF;
-    display: none;
 }
 /* Настройка непосредственно полосы прокрутки */
 #scroll {
@@ -292,7 +291,7 @@ body {
     background-repeat: no-repeat;
     left: auto;
     right: auto;
-    background-image: url("../pictures/default_button.svg");
+    background-image: url("../pictures/black_button_default.svg");
 }
 #file_new {
     float: right;
@@ -339,7 +338,7 @@ body {
     width: 100%;
 }
 #presets_default {
-    background-image:  url("../pictures/presets_def.svg");
+    background-image:  url("../pictures/green_button.svg");
     width: 4.9em;
     height: 2em;
 }
@@ -350,7 +349,7 @@ body {
     margin-left: 2em;
 }
 #preset_delete {
-    background-image: url("../pictures/preset_delete.svg");
+    background-image: url("../pictures/red_button.svg");
     width: 4.9em;
     float: right;
 }
@@ -377,7 +376,7 @@ body {
 }
 .wrapper_for_scrolling {
     height: 36.7em;
-    width: 34.3em;
+    width: 32.8em;
     display: block;
     position: relative;
     margin-right: 10px;
@@ -394,3 +393,38 @@ body {
     box-shadow: inset 0 0 200px rgba(255, 255, 255, 0.57);
     border-radius: 100px;
 }
+.Setup {
+    color: white;
+    font-weight: 700;   
+    left: 5.6em;
+    top: 4.35em;
+    position: fixed;
+    text-align: center;
+}
+.download p {
+    margin: 5px;
+    padding: 0px;
+}
+#transform_center {
+    float: left;
+}
+#transform_flip {
+    margin-left: 2em;
+}
+#transform_drop {
+    float: right;
+}
+#analise_button {
+    width: 100%;
+    background-image: url("../pictures/analise_model.svg") ;
+}
+#left_linear {
+    position: fixed;
+    left: 0.7em;
+    bottom: 2em;
+}
+#bottom_linear {
+    position: fixed;
+    bottom:0.7em;
+    left: 2em;
+}   
