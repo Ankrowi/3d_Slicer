@@ -47,9 +47,9 @@
         <p>Setup</p>
     </div>
     <input type="image" src="pictures/Arrow.svg" class="arrow" id="left_arrow">
-    <div class="scroll_layers">
+    <div class="scroll_layers" id="scroll_layer">
         <span>0</span>
-        <input type="range" id="scroll">
+        <input type="range" id="scroll" oninput="drag(this)">
         <span>72</span>
     </div>
     <div class="view_panel">
@@ -74,7 +74,7 @@
         <p>G-code</p>
     </div>
     <img src="pictures/Main_full.svg" id="main_picture">
-    <div class="settings_panel_one_slot">
+    <div class="settings_panel_one_slot" id="settings">
         <div class="settings_header">
             <a>PROJECT</a>
             <input type="image" src="pictures/Cross.svg" id="close_settings">
@@ -128,5 +128,6 @@
     </div>
     <script src="scripts/panels_script.js"></script>
     <script src="scripts/buttons_script.js"></script>
+    <script src="scripts/custom_slider.js"></script>
 </body>
 </html>

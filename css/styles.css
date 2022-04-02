@@ -99,13 +99,14 @@ body {
     position: fixed;
     margin: 0px;
     padding: 0px;
-    bottom: 116px;
+    top: 300px;
     left: 250px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     color:#FFFFFF;
     display: none;
+    /* transform: rotate(90deg); */
 }
 /* Настройка непосредственно полосы прокрутки */
 #scroll {
@@ -113,6 +114,7 @@ body {
     overflow: hidden;
     border-radius: 10px;
     -webkit-appearance: none;
+    
 }
 /* Настройка области прокрутки на слайдере */
 #scroll::-webkit-slider-runnable-track {
@@ -131,7 +133,7 @@ body {
     margin-top: -10px;
     cursor: ew-resize;
     background: white;
-    box-shadow: -1000px 0 0 1000px white;
+    box-shadow: -1000px 0 0 1000px green;
 }
 /* Настройка правой панели */
 #right_panel {
@@ -429,3 +431,6 @@ body {
     bottom:0.7em;
     left: 2em;
 }   
+/* #settings {
+    display: none;
+} */

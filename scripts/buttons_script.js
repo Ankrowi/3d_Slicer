@@ -29,7 +29,3 @@ Array.from(view_buttons).forEach(function (button) {
 function set_buttons_back_image(button, button_class) {
     button.style.backgroundImage = "url(" + buttons_ways.get(button_class) + ")"
 }
-
-
-console.log(window.screen.width)
-console.log(window.screen.height)
