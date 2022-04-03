@@ -74,7 +74,7 @@
         <p>G-code</p>
     </div>
     <img src="pictures/Main_full.svg" id="main_picture">
-    <div class="settings_panel_one_slot" id="settings">
+    <div class="settings_panel_one_slot" id="project">
         <div class="settings_header">
             <a>PROJECT</a>
             <input type="image" src="pictures/Cross.svg" id="close_settings">
@@ -92,25 +92,25 @@
                 <div class="lined_down_section">
                     <p>Presets</p>
                     <input type="text" class="custom_text_input" id="presets_input" placeholder="Default">
-                    <button class="custom_button" id="presets_default">Default</button>
+                    <button class="custom_button green_small_button">Default</button>
                 </div>
                 <div class="lined_down_section">
                     <p>Preset</p>
                     <input type="text" class="custom_text_input" id="preset_input" placeholder="Default">
                     <button class="custom_button" id="preset_save">Save</button>
                     <button class="custom_button" id="preset_clone">Clone</button>
-                    <button class="custom_button" id="preset_delete">Delete</button>
+                    <button class="custom_button red_small_button" id="preset_delete">Delete</button>
                     <div class="label_with_input">
                         <span>Machine Model</span>
                         <select class="custom_select" id="presets_mach_model"></select>
                     </div>
                     <div class="label_with_input">
                         <span>Machine name</span>
-                        <input type="type" class="custom_text_input" placeholder="Enter the name">
+                        <input type="text" class="custom_text_input" placeholder="Enter the name">
                     </div>
                     <div class="label_with_input">
                         <span>Dropparts height</span>
-                        <input type="type" class="custom_text_input" placeholder="Enter the height">
+                        <input type="text" class="custom_text_input" placeholder="Enter the height">
                     </div>
                 </div>
                 <div class="lined_down_section">
@@ -125,9 +125,56 @@
             </div>
         </div>
     </div>
+    <div class="settings_panel_one_slot" id="support">
+        <div class="settings_header">
+            <a>SUPPORT</a>
+            <input type="image" src="pictures/Cross.svg" id="close_settings">
+        </div>
+        <div class="wrapper_for_scrolling">
+            <div class="panel" id="settings_support_frts_section">
+                <div class="lined_down_section">
+                    <p>Support</p>
+                    <button class="custom_button half_line" id="support_select">Support selected</button>
+                    <button class="custom_button half_line" id="support_clear">Clear supports</button>
+                    <button class="custom_button half_line" id="support_columns">Column supports</button>
+                    <button class="custom_button half_line" id="support_block">Block supports</button>
+                </div>
+                <div class="lined_down_section">
+                    <p>Presets</p>
+                    <input type="text" class="custom_text_input" id="supp_presets_def_input" placeholder="Default">
+                    <br><button class="custom_button green_small_button">Default</button>
+                </div>
+                <div class="lined_down_section">
+                    <p>Preset</p>
+                    <input type="text" class="custom_text_input full_width" id="supp_preset_def" placeholder="Default">
+                    <button class="custom_button">Save</button>
+                    <button class="custom_button mid_button">Open</button>
+                    <button class="custom_button red_small_button">Delete</button>
+                    <div class="label_with_input">
+                        <span>Column type</span>
+                        <select class="custom_select" id="presets_column_type"></select>
+                    </div>
+                    
+                    <div class="label_with_input">
+                        <span>Column step</span>
+                        <input type="text" class="custom_text_input" placeholder="Enter the height">
+                    </div>
+                    <div class="label_with_input">
+                        <span>Critical angle</span>
+                        <input type="text" class="custom_text_input" placeholder="Enter the name">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper_for_scrolling">
+            <div class="panel" id="settings_support_scnd_section">
+
+            </div>
+        </div>
     </div>
     <script src="scripts/panels_script.js"></script>
     <script src="scripts/buttons_script.js"></script>
     <script src="scripts/custom_slider.js"></script>
 </body>
+
 </html>

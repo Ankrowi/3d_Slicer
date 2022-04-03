@@ -311,6 +311,7 @@ body {
     border: none;
     float: right;
     width: 19em;
+    margin-bottom: 0.6em;
 }
 .custom_text_input::-webkit-input-placeholder {
     padding-left: 5px;
@@ -350,11 +351,6 @@ body {
 }
 #preset_clone {
     margin-left: 2em;
-}
-#preset_delete {
-    background-image: url("../pictures/red_button.svg");
-    width: 4.9em;
-    float: right;
 }
 .custom_select {
     height: 2em !important;
@@ -431,6 +427,39 @@ body {
     bottom:0.7em;
     left: 2em;
 }   
-/* #settings {
+#project {
     display: none;
-} */
+}
+.half_line {
+    width: 45%;
+}
+#support_clear {
+    float: right;
+}
+#support_block {
+    float: right;
+}
+#supp_presets_def_input {
+    width: 100% !important;
+    float: none;
+    margin-bottom: 0.6em;
+}
+.red_small_button {
+    background-image: url("../pictures/red_button.svg");
+    width: 4.9em;
+    float: right;
+}
+.green_small_button {
+    background-image:  url("../pictures/green_button.svg");
+    width: 4.9em;
+    height: 2em;
+}
+.right {
+    float: right;
+}
+.full_width {
+    width: 100%;
+}
+.mid_button {
+    margin-left: 2em;
+}
