@@ -109,25 +109,24 @@ body {
     /* transform: rotate(90deg); */
 }
 /* Настройка непосредственно полосы прокрутки */
-#scroll {
+.scroll {
     width: 1872px;
     overflow: hidden;
     border-radius: 10px;
-    -webkit-appearance: none;
-    
+    -webkit-appearance: none; 
 }
 /* Настройка области прокрутки на слайдере */
-#scroll::-webkit-slider-runnable-track {
+.scroll::-webkit-slider-runnable-track {
     border-radius: 10px;
     background-color: rgb(0,0,0,0.59);
-    height: 20px;
+    height: 0.9em;
     -webkit-appearance: none;
 }
 /* Настройка ползунка на полосе прокрутки */
-#scroll::-webkit-slider-thumb {
+.scroll::-webkit-slider-thumb {
     -webkit-appearance: none;
     background-color:#FFFFFF;
-    width: 20px;
+    width: 0.9em;
     height: 40px;
     border-radius: 0px;
     margin-top: -10px;
@@ -427,7 +426,7 @@ body {
     left: 2em;
 }   
 #project {
-    /* display: none; */
+    display: none;
 }
 .half_line {
     width: 45%;
@@ -483,7 +482,7 @@ body {
     display: none;
 }
 #slice {
-    /* display: none; */
+    display: none;
 }
 .wrapper_for_scrolling .panel {
     /* position: relative; */
@@ -492,4 +491,87 @@ body {
 .long_button {
     width: 100%;
     background-image: url("../pictures/analise_model.svg") ;
+}
+.text_input_with_letter {
+    width: fit-content;
+    padding: 0em;
+    margin: 0em;
+    margin-left: 2em;
+    display: inline;
+}
+.text_input_with_letter span{
+    color: white;
+    font-weight: 400;
+}
+.text_input_with_letter input[type="text"] {
+    height: 2em !important;
+    background: #767676;
+    border-radius: 10 px;
+    -webkit-border-radius: 10px; 
+    outline: none;
+    border: none;
+    width: 25%;
+}
+.text_input_with_letter input[type="text"]::-webkit-input-placeholder {
+    padding-left: 5px;
+    color:#A0A0A0;
+    opacity:1;
+}
+.text_input_with_letter input[type="text"]:-moz-placeholder {
+    padding-left: 5px;
+    color:#A0A0A0;
+    opacity:1;
+}
+.text_input_with_letter input[type="text"]::-moz-placeholder {
+    padding-left: 5px;
+    color:#A0A0A0;
+    opacity:1;
+}
+.text_input_with_letter input[type="text"]:-ms-input-placeholder {
+    padding-left: 5px;
+    color:#A0A0A0;
+    opacity:1;
+}
+#layers_clone {
+    margin-left: 37%;
+}
+.stat_txt {
+    font-weight: 400 !important ;
+    display: auto;
+    color: white;
+    margin-bottom: 0.2em !important;
+    padding: 0em !important ;
+}
+#statistics_estimate {
+    top: 24em;
+    position: fixed;
+    left: 25.5em;
+}
+#layers_anim_speed {
+    top: -1em;
+    left: 9em;
+    position: relative;
+    width: 70%;
+}
+#layers_speed {
+    margin-left: 37%;
+}
+#layers_power {
+    margin-left: 20%;
+}
+.invisible {
+    border-style: none;
+    background-color: inherit;
+    color: white;
+    font-weight: 400;
+}
+.layers_small {
+    width: 29%;
+    position: relative;
+}
+.first_column {
+    right: 10em;
+}
+.second_column {
+    right: -9em;
 }
