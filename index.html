@@ -130,8 +130,9 @@
             <a>SUPPORT</a>
             <input type="image" src="pictures/Cross.svg" id="close_settings">
         </div>
-        <div class="wrapper_for_scrolling">
-            <div class="panel" id="settings_support_frts_section">
+
+        <div class="panel">
+            <div class="wrapper_for_scrolling">
                 <div class="lined_down_section">
                     <p>Support</p>
                     <button class="custom_button half_line" id="support_select">Support selected</button>
@@ -142,7 +143,7 @@
                 <div class="lined_down_section">
                     <p>Presets</p>
                     <input type="text" class="custom_text_input" id="supp_presets_def_input" placeholder="Default">
-                    <br><button class="custom_button green_small_button">Default</button>
+                    <button class="custom_button green_small_button">Default</button>
                 </div>
                 <div class="lined_down_section">
                     <p>Preset</p>
@@ -154,7 +155,6 @@
                         <span>Column type</span>
                         <select class="custom_select" id="presets_column_type"></select>
                     </div>
-                    
                     <div class="label_with_input">
                         <span>Column step</span>
                         <input type="text" class="custom_text_input" placeholder="Enter the height">
@@ -166,9 +166,116 @@
                 </div>
             </div>
         </div>
-        <div class="wrapper_for_scrolling">
-            <div class="panel" id="settings_support_scnd_section">
 
+        <div class="panel">
+            <div class="wrapper_for_scrolling">
+                <div class="lined_down_section">
+                    <p>Part-platform</p>
+                    <input type="text" class="custom_text_input half_line float_none large_bottom"
+                        placeholder="Column tip (a)">
+                    <input type="text" class="custom_text_input half_line right large_bottom"
+                        placeholder="Column tip height (ah)">
+                    <input type="text" class="custom_text_input half_line float_none large_bottom"
+                        placeholder="Column width (b)">
+                    <input type="text" class="custom_text_input half_line right large_bottom"
+                        placeholder="Column break (c)">
+                    <input type="text" class="custom_text_input half_line float_none large_bottom"
+                        placeholder="Column break height (ch)">
+                    <input type="text" class="custom_text_input half_line rigth large_bottom"
+                        placeholder="Column bas (d)">
+                    <input type="text" class="custom_text_input half_line float_none large_bottom"
+                        placeholder="Column base height (dh)">
+                    <!-- <button class="custom button full_width">Analise model</button> -->
+                </div>
+                <div class="lined_down_section">
+                    <p>Part-part</p>
+                    <input type="text" class="custom_text_input half_line left large_bottom"
+                        placeholder="Column tip (a)">
+                    <input type="text" class="custom_text_input half_line right large_bottom"
+                        placeholder="Column tip height (ah)">
+                    <input type="text" class="custom_text_input half_line left large_bottom"
+                        placeholder="Column width (b)">
+                    <input type="text" class="custom_text_input half_line right large_bottom"
+                        placeholder="Column break (c)">
+                    <input type="text" class="custom_text_input half_line left large_bottom"
+                        placeholder="Column break height (ch)">
+                    <input type="text" class="custom_text_input half_line right large_bottom"
+                        placeholder="Column bas (d)">
+                    <input type="text" class="custom_text_input half_line left large_bottom"
+                        placeholder="Column base height (dh)">
+                    <button class="custom_button full_width" id="supp_analise_model">Analise model</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="settings_panel_one_slot" id="slice">
+        <div class="settings_header">
+            <a>SLICE</a>
+            <input type="image" src="pictures/Cross.svg" id="close_settings">
+        </div>
+        <div class="panel">
+            <div class="wrapper_for_scrolling">
+                <div class="lined_down_section">
+                    <p>Slice</p>
+                    <button class="custom_button full_width" id="slice_select">Slice selected</button>
+                    <p>Position</p>
+                    <input type="txt" class="custom_text_input full_width float_none" placeholder="72">
+                    <button class="custom_button green_small_button">Default</button>
+                </div>
+                <div class="lined_down_section">
+                    <p>Preset</p>
+                    <input type="text" class="custom_text_input full_width float_none mid_bottom" placeholder="Default">
+                    <button class="custom_button mid_bottom">Save</button>
+                    <button class="custom_button mid_button">Clone</button>
+                    <button class="custom_button red_small_button">Delete</button>
+                    <div class="label_with_input">
+                        <span>Name</span>
+                        <input type="text" class="custom_text_input right" placeholder="Slice F">
+                    </div>
+                    <div class="label_with_input">
+                        <span>Layer height um</span>
+                        <input type="text" class="custom_text_input right" placeholder="50">
+                    </div>
+                    <div class="label_with_input">
+                        <span>Column step</span>
+                        <input type="text" class="custom_text_input right" placeholder="100">
+                    </div>
+                    <div class="label_with_input">
+                        <span>Laser spot offset</span>
+                        <input type="text" class="custom_text_input right" placeholder="0.05">
+                    </div>
+                    <div class="label_with_input">
+                        <span>Outline</span>
+                        <input type="text" class="custom_text_input right" placeholder="2">
+                    </div>
+                    <div class="label_with_input">
+                        <span>Outline step</span>
+                        <input type="text" class="custom_text_input right" placeholder="0.08">
+                    </div>
+                </div>
+                <div class="lined_down_section">
+                    <p>Hatching</p>
+                    <div class="label_with_input">
+                        <span>Hatch rotation</span>
+                        <input type="text" class="custom_text_input right" placeholder="72">
+                    </div>
+                    <div class="label_with_input">
+                        <span>Smoke direction</span>
+                        <input type="text" class="custom_text_input right" placeholder="Slice F">
+                    </div>
+                    <div class="label_with_input">
+                        <span>Smoke cone angle</span>
+                        <input type="text" class="custom_text_input right" placeholder="50">
+                    </div>
+                    <div class="label_with_input">
+                        <span>Hatch stripe width</span>
+                        <input type="text" class="custom_text_input right" placeholder="100">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="wrapper_for_scrolling">
             </div>
         </div>
     </div>

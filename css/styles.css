@@ -228,8 +228,10 @@ body {
     backdrop-filter: blur(15px);        
     border-radius: 25px;
     position: absolute;
-    top: 9.6em;
+    top: 8em;
     left: 22.7em;
+    width: fit-content;
+    max-height: 42em;
 }
 .settings_panel_one_slot a {
     font-size: 18px;
@@ -242,14 +244,6 @@ body {
     color: #000000;
     position: absolute;
 }
-.settings_panel_one_slot .panel {
-    margin-left: 1.45em;
-    float: left;
-    border-radius: 25px;
-    margin-right: 1.45em;
-    margin-bottom: 1.45em;
-    overflow: auto;
-}
 #close_settings {
     float: right;
     padding: 0px;
@@ -259,11 +253,7 @@ body {
 }
 .settings_header{
     height: 3.9em;
-    width: inherit;
-}
-#settings_project {
-    display: block;
-    position: relative;
+    width: 100%;
 }
 .lined_down_section {
     margin-left: 1.7em;
@@ -376,10 +366,19 @@ body {
 .wrapper_for_scrolling {
     height: 36.7em;
     width: 32.8em;
-    display: block;
+    display: block; 
     position: relative;
-    margin-right: 10px;
+    overflow: auto;  
+    margin-right: 1em;
+}
+.settings_panel_one_slot .panel {
+    margin-left: 1.45em;
+    border-radius: 25px;
+    margin-right: 1em;
+    margin-bottom: 1.45em;
+    float: left;
     overflow: auto;
+    max-height: 36.7em;
 }
 .wrapper_for_scrolling::-webkit-scrollbar {
     width: 8px;
@@ -428,7 +427,7 @@ body {
     left: 2em;
 }   
 #project {
-    display: none;
+    /* display: none; */
 }
 .half_line {
     width: 45%;
@@ -462,4 +461,31 @@ body {
 }
 .mid_button {
     margin-left: 2em;
+}
+.left {
+    float: left;
+}
+.float_none {
+    float: none;
+}
+.large_bottom {
+    margin-bottom: 1.2em;
+}
+.mid_bottom {
+    margin-bottom: 1.3em;
+}
+#supp_analise_model {
+    margin-bottom: 1.2em;
+    margin-top: 1em;
+    background-image: url("../pictures/analise_model.svg");
+}
+#support {
+    display: none;
+}
+#slice {
+    /* display: none; */
+}
+.wrapper_for_scrolling .panel {
+    /* position: relative; */
+    display: block;
 }
